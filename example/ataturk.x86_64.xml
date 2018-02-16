@@ -2,7 +2,7 @@
     <Title>Pisilinux-ATATURK-x86_64</Title>
     <WorkDir>/home/gulle/deneiso3</WorkDir>
     <ConfigFiles>/home/gulle/RCPisiman/config</ConfigFiles>
-    <PackageSelection repo_uri="ftp://ftp.linux.org.tr/pisilinux/2.0-stable/pisi-index.xml.xz">
+    <PackageSelection repo_uri="https://ciftlik.pisilinux.org/2.0-Beta.1/pisi-index.xml.xz">
         <SelectedComponent>desktop.kde.framework</SelectedComponent>
         <SelectedComponent>desktop.kde.plasma</SelectedComponent>
         <SelectedComponent>desktop.toolkit.qt5</SelectedComponent>

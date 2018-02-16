@@ -38,6 +38,11 @@ url=file:///usr/share/applications/mozillafirefox.desktop
 [Containments][1][Applets][125][Configuration][General]
 history=#795e55,#4c1c0d
 
+[Containments][1][Applets][20][Configuration]
+localPath=/home/pisilive/.local/share/plasma_icons/calamares.desktop
+url=file:///usr/share/applications/calamares.desktop
+
+
 [Containments][1][Applets][126][Configuration][General]
 color=black
 noteId=4672709a-62e9-4eef-a4e3-ede4b03cda
