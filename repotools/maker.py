@@ -275,9 +275,13 @@ def squash_image(project):
     image_dir = project.image_dir()
     image_dir = project.image_dir()
     image_dir = project.image_dir()
-    
+    configdir =os.path.join(project.config_files)
     sqfs_path = os.path.join(project.work_dir)
-    
+    path = os.path.join(image_dir, "home/pisilive/Masaüstü")
+    if not os.path.exists(path):
+            os.makedirs(path)
+    run("cp -rf %s/Masaüstü %s/home/pisilive/" % (configdir,image_dir))
+    run("cp -rf %s/göruntu/* %s/usr/share/wallpapers/Maia/contents" % (configdir,image_dir))
     print "squashfs image dir%s" % image_dir
     if not image_dir.endswith("/"):
         image_dir += "/"

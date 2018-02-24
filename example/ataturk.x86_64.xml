@@ -151,8 +151,6 @@
         <SelectedPackage>pisilinux-gtk</SelectedPackage>
         <SelectedPackage>pisilinux-theme-maia</SelectedPackage>
         <SelectedPackage>pisilinux-theme-maia</SelectedPackage>
-        <SelectedPackage>pisilinux-welcome</SelectedPackage>
-        <SelectedPackage>pisilinux-welcome</SelectedPackage>
         <SelectedPackage>plymouth</SelectedPackage>
         <SelectedPackage>poppler-glib</SelectedPackage>
         <SelectedPackage>print-manager</SelectedPackage>
@@ -860,7 +858,6 @@
         <Package>pisilinux-gtk</Package>
         <Package>pisilinux-python</Package>
         <Package>pisilinux-theme-maia</Package>
-        <Package>pisilinux-welcome</Package>
         <Package>pixman</Package>
         <Package>plasma-desktop</Package>
         <Package>plasma-framework</Package>
@@ -1258,8 +1255,6 @@
         <SelectedPackage>pisilinux-gtk</SelectedPackage>
         <SelectedPackage>pisilinux-theme-maia</SelectedPackage>
         <SelectedPackage>pisilinux-theme-maia</SelectedPackage>
-        <SelectedPackage>pisilinux-welcome</SelectedPackage>
-        <SelectedPackage>pisilinux-welcome</SelectedPackage>
         <SelectedPackage>plymouth</SelectedPackage>
         <SelectedPackage>poppler-glib</SelectedPackage>
         <SelectedPackage>print-manager</SelectedPackage>
@@ -1967,7 +1962,6 @@
         <Package>pisilinux-gtk</Package>
         <Package>pisilinux-python</Package>
         <Package>pisilinux-theme-maia</Package>
-        <Package>pisilinux-welcome</Package>
         <Package>pixman</Package>
         <Package>plasma-desktop</Package>
         <Package>plasma-framework</Package>

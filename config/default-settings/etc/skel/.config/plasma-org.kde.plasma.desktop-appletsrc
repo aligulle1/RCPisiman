@@ -1,3 +1,5 @@
+ 
+
 [ActionPlugins][0]
 MidButton;NoModifier=org.kde.paste
 RightButton;NoModifier=org.kde.contextmenu
@@ -27,12 +29,7 @@ wallpaperplugin=org.kde.image
 immutability=1
 plugin=org.kde.plasma.pager
 
-[Containments][2][Applets][3][Configuration][General]
-favoritesPortedToKAstats=true
-icon=/usr/share/pixmaps/plymouth-pisilinux.png
-
 [Containments][1][Applets][124][Configuration][General]
-localPath=~/.local/share/plasma_icons/mozillafirefox.desktop
 url=file:///usr/share/applications/mozillafirefox.desktop
 
 [Containments][1][Applets][125][Configuration][General]
@@ -66,7 +63,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][1][Applets][2][Configuration][General]
-favorites=calamares.desktop,mozillafirefox.desktop,systemsettings.desktop,org.kde.dolphin.desktop,package-manager-network.desktop,org.kde.konsole.desktop
+favorites=calamares.desktop,mozillafirefox.desktop,systemsettings.desktop,org.kde.dolphin.desktop,package-manager-network.desktop,org.kde.konsole.desktop,kaptan.desktop
 
 [Containments][1][Applets][2][Configuration][Shortcuts]
 global=Alt+F1
@@ -145,7 +142,14 @@ url=trash:/
 url=file:///usr/share/applications/org.kde.dolphin.desktop
 
 [Containments][1][Applets][56][Configuration][General]
+url=file:///usr/share/applications/kaptan.desktop
+
+[Containments][1][Applets][58][Configuration][General]
 url=file:///usr/share/applications/calamares.desktop
+
+[Containments][146][General]
+positions=2,7,desktop:/kaptan.desktop,1,0,desktop:/trash.desktop,0,1,desktop:/Home.desktop,0,0,desktop:/calamares.desktop,1,1
+sortMode=-1
 
 [Containments][1][Applets][6]
 immutability=1
