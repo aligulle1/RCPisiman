@@ -157,8 +157,8 @@
         <SelectedPackage>pulseaudio</SelectedPackage>
         <SelectedPackage>qbittorrent</SelectedPackage>
         <SelectedPackage>qt5-phonon-backend-gstreamer</SelectedPackage>
-        <SelectedPackage>sddm</SelectedPackage>
-        <SelectedPackage>sddm-kcm</SelectedPackage>
+        <SelectedPackage>lxdm</SelectedPackage>
+        <SelectedPackage>iso-codes</SelectedPackage>
         <SelectedPackage>service-manager</SelectedPackage>
         <SelectedPackage>smpeg</SelectedPackage>
         <SelectedPackage>smplayer</SelectedPackage>
@@ -221,6 +221,8 @@
         <SelectedPackage>xorg-video-voodoo</SelectedPackage>
         <SelectedPackage>xterm</SelectedPackage>
         <SelectedPackage>xvba-video</SelectedPackage>
+        <SelectedPackage>efitools</SelectedPackage>
+        <Package>efitools</Package>
         <Package>Calamares</Package>
         <Package>ConsoleKit</Package>
         <Package>DirectFB</Package>
@@ -966,8 +968,8 @@
         <Package>sbc</Package>
         <Package>schroedinger</Package>
         <Package>scim-libs</Package>
-        <Package>sddm</Package>
-        <Package>sddm-kcm</Package>
+        <Package>lxdm</Package>
+        <Package>iso-codes</Package>
         <Package>sed</Package>
         <Package>service-manager</Package>
         <Package>sg3_utils</Package>
@@ -1261,8 +1263,8 @@
         <SelectedPackage>pulseaudio</SelectedPackage>
         <SelectedPackage>qbittorrent</SelectedPackage>
         <SelectedPackage>qt5-phonon-backend-gstreamer</SelectedPackage>
-        <SelectedPackage>sddm</SelectedPackage>
-        <SelectedPackage>sddm-kcm</SelectedPackage>
+        <SelectedPackage>lxdm</SelectedPackage>
+        <SelectedPackage>iso-codes</SelectedPackage>
         <SelectedPackage>service-manager</SelectedPackage>
         <SelectedPackage>smpeg</SelectedPackage>
         <SelectedPackage>smplayer</SelectedPackage>
@@ -1325,6 +1327,8 @@
         <SelectedPackage>xorg-video-voodoo</SelectedPackage>
         <SelectedPackage>xterm</SelectedPackage>
         <SelectedPackage>xvba-video</SelectedPackage>
+        <SelectedPackage>efitools</SelectedPackage>
+        <SelectedPackage>pisilinux-welcome</SelectedPackage>
         <Package>Calamares</Package>
         <Package>ConsoleKit</Package>
         <Package>DirectFB</Package>
@@ -2070,8 +2074,8 @@
         <Package>sbc</Package>
         <Package>schroedinger</Package>
         <Package>scim-libs</Package>
-        <Package>sddm</Package>
-        <Package>sddm-kcm</Package>
+        <Package>lxdm</Package>
+        <Package>iso-codes</Package>
         <Package>sed</Package>
         <Package>service-manager</Package>
         <Package>sg3_utils</Package>
@@ -2209,6 +2213,8 @@
         <Package>zip</Package>
         <Package>zlib</Package>
         <Package>zvbi</Package>
+        <Package>efitools</Package>
+        <Package>pisilinux-welcome</Package>
     </RootImagePackages>
     <LanguageSelection default_language="tr_TR">
         <Language>tr_TR</Language>

@@ -281,9 +281,6 @@ def squash_image(project):
     run("cp -rf %s/dosyalar/99-my.rules %s/etc/polkit-1/rules.d/" % (configdir,image_dir))
     run("cp -rf %s/dosyalar/group %s/etc/" % (configdir,image_dir))
     run("cp -rf %s/dosyalar/main.py %s/usr/lib/calamares/modules/bootloader/" % (configdir,image_dir))
-    run("cp -rf %s/dosyalar/mudur/main.py %s/usr/lib/calamares/modules/mudur/" % (configdir,image_dir))
-    run("cp -rf %s/dosyalar/mudur.py %s/sbin/" % (configdir,image_dir))
-    run("cp -rf %s/dosyalar/locale.conf %s/etc/" % (configdir,image_dir))
     print "squashfs image dir%s" % image_dir
     if not image_dir.endswith("/"):
         image_dir += "/"
@@ -519,7 +516,7 @@ def make_image(project):
         
         make_initrd(project)
         add_repo(project)
-        setup_live_sddm(project)
+        setup_live_lxdm(project)
     except KeyboardInterrupt:
         print "Keyboard Interrupt: make_image() cancelled."
         sys.exit(1)        
