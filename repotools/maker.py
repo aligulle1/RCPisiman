@@ -278,9 +278,6 @@ def squash_image(project):
     configdir =os.path.join(project.config_files)
     sqfs_path = os.path.join(project.work_dir)
     run("cp -rf %s/göruntu/* %s/usr/share/wallpapers/Maia/contents" % (configdir,image_dir))
-    run("cp -rf %s/dosyalar/99-my.rules %s/etc/polkit-1/rules.d/" % (configdir,image_dir))
-    run("cp -rf %s/dosyalar/group %s/etc/" % (configdir,image_dir))
-    run("cp -rf %s/dosyalar/main.py %s/usr/lib/calamares/modules/bootloader/" % (configdir,image_dir))
     print "squashfs image dir%s" % image_dir
     if not image_dir.endswith("/"):
         image_dir += "/"
