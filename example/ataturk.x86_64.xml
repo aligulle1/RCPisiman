@@ -102,6 +102,8 @@
         <SelectedPackage>history-manager</SelectedPackage>
         <SelectedPackage>icon-theme-adwaita</SelectedPackage>
         <SelectedPackage>kaptan</SelectedPackage>
+        <SelectedPackage>zemberek-office</SelectedPackage>
+        <SelectedPackage>kde-servicemenu-rootactions</SelectedPackage>
         <SelectedPackage>kate</SelectedPackage>
         <SelectedPackage>kernel</SelectedPackage>
         <SelectedPackage>kio-extras</SelectedPackage>
@@ -1107,6 +1109,8 @@
         <Package>zip</Package>
         <Package>zlib</Package>
         <Package>zvbi</Package>
+        <Package>zemberek-office</Package>
+        <Package>kde-servicemenu-rootactions</Package>
     </PackageSelection>
     <RootImagePackages>
         <SelectedComponent>desktop.kde.framework</SelectedComponent>
@@ -1329,6 +1333,8 @@
         <SelectedPackage>xvba-video</SelectedPackage>
         <SelectedPackage>efitools</SelectedPackage>
         <SelectedPackage>pisilinux-welcome</SelectedPackage>
+         <SelectedPackage>zemberek-office</SelectedPackage>
+        <SelectedPackage>kde-servicemenu-rootactions</SelectedPackage>
         <Package>Calamares</Package>
         <Package>ConsoleKit</Package>
         <Package>DirectFB</Package>
@@ -2215,6 +2221,8 @@
         <Package>zvbi</Package>
         <Package>efitools</Package>
         <Package>pisilinux-welcome</Package>
+        <Package>zemberek-office</Package>
+        <Package>kde-servicemenu-rootactions</Package>
     </RootImagePackages>
     <LanguageSelection default_language="tr_TR">
         <Language>tr_TR</Language>
