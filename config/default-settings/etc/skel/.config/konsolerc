@@ -1,6 +1,9 @@
 [Desktop Entry]
 DefaultProfile=
-
+[KonsoleWindow]
+ShowWindowTitleOnTitleBar=true
+[TabBar]
+ShowQuickButtons=true
 [Favorite Profiles]
 Favorites=
 
