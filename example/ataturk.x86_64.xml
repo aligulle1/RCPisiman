@@ -224,6 +224,7 @@
         <SelectedPackage>xterm</SelectedPackage>
         <SelectedPackage>xvba-video</SelectedPackage>
         <SelectedPackage>efitools</SelectedPackage>
+        <SelectedPackage>kdeconnect</SelectedPackage>
         <Package>efitools</Package>
         <Package>Calamares</Package>
         <Package>ConsoleKit</Package>
@@ -1111,6 +1112,7 @@
         <Package>zvbi</Package>
         <Package>zemberek-office</Package>
         <Package>kde-servicemenu-rootactions</Package>
+        <Package>kdeconnect</Package>
     </PackageSelection>
     <RootImagePackages>
         <SelectedComponent>desktop.kde.framework</SelectedComponent>
@@ -1119,6 +1121,7 @@
         <SelectedComponent>hardware.firmware</SelectedComponent>
         <SelectedComponent>system.base</SelectedComponent>
         <SelectedComponent>x11.server</SelectedComponent>
+        <SelectedPackage>kdeconnect</SelectedPackage>
         <SelectedPackage>Calamares</SelectedPackage>
         <SelectedPackage>alsa-tools</SelectedPackage>
         <SelectedPackage>alsa-utils</SelectedPackage>
@@ -2223,6 +2226,7 @@
         <Package>pisilinux-welcome</Package>
         <Package>zemberek-office</Package>
         <Package>kde-servicemenu-rootactions</Package>
+        <Package>kdeconnect</Package>
     </RootImagePackages>
     <LanguageSelection default_language="tr_TR">
         <Language>tr_TR</Language>
