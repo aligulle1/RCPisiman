@@ -1126,6 +1126,7 @@
         <SelectedPackage>alsa-tools</SelectedPackage>
         <SelectedPackage>alsa-utils</SelectedPackage>
         <SelectedPackage>ark</SelectedPackage>
+		<SelectedPackage>acpi</SelectedPackage>
         <SelectedPackage>bash-completion</SelectedPackage>
         <SelectedPackage>bashdb</SelectedPackage>
         <SelectedPackage>boost</SelectedPackage>
@@ -2227,6 +2228,7 @@
         <Package>zemberek-office</Package>
         <Package>kde-servicemenu-rootactions</Package>
         <Package>kdeconnect</Package>
+		<Package>acpi</Package>
     </RootImagePackages>
     <LanguageSelection default_language="tr_TR">
         <Language>tr_TR</Language>
