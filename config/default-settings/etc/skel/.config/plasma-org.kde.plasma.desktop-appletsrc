@@ -66,6 +66,8 @@ plugin=org.kde.plasma.kickoff
 
 favorites=calamares.desktop,mozillafirefox.desktop,systemsettings.desktop,org.kde.dolphin.desktop,package-manager-network.desktop,org.kde.konsole.desktop
 
+icon=/usr/share/about-distro/pisilinux.svg
+
 [Containments][1][Applets][2][Configuration][Shortcuts]
 global=Alt+F1
 
