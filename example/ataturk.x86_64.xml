@@ -1,5 +1,5 @@
 <PisiManProject type="Sddm" compression="xz">
-    <Title>Pisilinux-ATATURK-x86_64</Title>
+    <Title>Pisilinux-ATATURK-UEFI_KDE_x86_64</Title>
     <WorkDir>/home/gulle/deneiso3</WorkDir>
     <ConfigFiles>/home/gulle/RCPisiman/config</ConfigFiles>
     <PackageSelection repo_uri="https://ciftlik.pisilinux.org/2.0-Beta.1/pisi-index.xml.xz">
@@ -10,6 +10,7 @@
         <SelectedComponent>system.base</SelectedComponent>
         <SelectedComponent>x11.server</SelectedComponent>
         <SelectedPackage>Calamares</SelectedPackage>
+        <SelectedPackage>acpi</SelectedPackage>
         <SelectedPackage>alsa-tools</SelectedPackage>
         <SelectedPackage>alsa-utils</SelectedPackage>
         <SelectedPackage>ark</SelectedPackage>
@@ -24,6 +25,7 @@
         <SelectedPackage>desktop-file-utils</SelectedPackage>
         <SelectedPackage>dolphin</SelectedPackage>
         <SelectedPackage>droid-fonts</SelectedPackage>
+        <SelectedPackage>efitools</SelectedPackage>
         <SelectedPackage>firefox</SelectedPackage>
         <SelectedPackage>firefox-lang-ca</SelectedPackage>
         <SelectedPackage>firefox-lang-da</SelectedPackage>
@@ -101,10 +103,11 @@
         <SelectedPackage>gwenview</SelectedPackage>
         <SelectedPackage>history-manager</SelectedPackage>
         <SelectedPackage>icon-theme-adwaita</SelectedPackage>
+        <SelectedPackage>iso-codes</SelectedPackage>
         <SelectedPackage>kaptan</SelectedPackage>
-        <SelectedPackage>zemberek-office</SelectedPackage>
-        <SelectedPackage>kde-servicemenu-rootactions</SelectedPackage>
         <SelectedPackage>kate</SelectedPackage>
+        <SelectedPackage>kde-servicemenu-rootactions</SelectedPackage>
+        <SelectedPackage>kdeconnect</SelectedPackage>
         <SelectedPackage>kernel</SelectedPackage>
         <SelectedPackage>kio-extras</SelectedPackage>
         <SelectedPackage>konsole</SelectedPackage>
@@ -138,6 +141,7 @@
         <SelectedPackage>libreoffice-writer</SelectedPackage>
         <SelectedPackage>libva-intel-driver</SelectedPackage>
         <SelectedPackage>logrotate</SelectedPackage>
+        <SelectedPackage>lxdm</SelectedPackage>
         <SelectedPackage>memtest86</SelectedPackage>
         <SelectedPackage>mkinitcpio</SelectedPackage>
         <SelectedPackage>module-bbswitch</SelectedPackage>
@@ -153,14 +157,14 @@
         <SelectedPackage>pisilinux-gtk</SelectedPackage>
         <SelectedPackage>pisilinux-theme-maia</SelectedPackage>
         <SelectedPackage>pisilinux-theme-maia</SelectedPackage>
+        <SelectedPackage>pisilinux-welcome</SelectedPackage>
         <SelectedPackage>plymouth</SelectedPackage>
         <SelectedPackage>poppler-glib</SelectedPackage>
+        <SelectedPackage>powertop</SelectedPackage>
         <SelectedPackage>print-manager</SelectedPackage>
         <SelectedPackage>pulseaudio</SelectedPackage>
         <SelectedPackage>qbittorrent</SelectedPackage>
         <SelectedPackage>qt5-phonon-backend-gstreamer</SelectedPackage>
-        <SelectedPackage>lxdm</SelectedPackage>
-        <SelectedPackage>iso-codes</SelectedPackage>
         <SelectedPackage>service-manager</SelectedPackage>
         <SelectedPackage>smpeg</SelectedPackage>
         <SelectedPackage>smplayer</SelectedPackage>
@@ -223,9 +227,7 @@
         <SelectedPackage>xorg-video-voodoo</SelectedPackage>
         <SelectedPackage>xterm</SelectedPackage>
         <SelectedPackage>xvba-video</SelectedPackage>
-        <SelectedPackage>efitools</SelectedPackage>
-        <SelectedPackage>kdeconnect</SelectedPackage>
-        <Package>efitools</Package>
+        <SelectedPackage>zemberek-office</SelectedPackage>
         <Package>Calamares</Package>
         <Package>ConsoleKit</Package>
         <Package>DirectFB</Package>
@@ -235,6 +237,7 @@
         <Package>aalib</Package>
         <Package>accountsservice</Package>
         <Package>acl</Package>
+        <Package>acpi</Package>
         <Package>alsa-firmware</Package>
         <Package>alsa-lib</Package>
         <Package>alsa-tools</Package>
@@ -325,6 +328,7 @@
         <Package>e2fsprogs</Package>
         <Package>ebook-tools</Package>
         <Package>efibootmgr</Package>
+        <Package>efitools</Package>
         <Package>efivar</Package>
         <Package>elfutils</Package>
         <Package>enca</Package>
@@ -474,6 +478,7 @@
         <Package>iniparser</Package>
         <Package>iproute2</Package>
         <Package>iptables</Package>
+        <Package>iso-codes</Package>
         <Package>jack-audio-connection-kit</Package>
         <Package>jasper</Package>
         <Package>jbigkit</Package>
@@ -499,7 +504,9 @@
         <Package>kdbusaddons</Package>
         <Package>kde-cli-tools</Package>
         <Package>kde-gtk-config</Package>
+        <Package>kde-servicemenu-rootactions</Package>
         <Package>kdeclarative</Package>
+        <Package>kdeconnect</Package>
         <Package>kdecorations</Package>
         <Package>kded</Package>
         <Package>kdegraphics-mobipocket</Package>
@@ -787,6 +794,7 @@
         <Package>lsb-release</Package>
         <Package>lua</Package>
         <Package>lvm2</Package>
+        <Package>lxdm</Package>
         <Package>lzo</Package>
         <Package>mailcap</Package>
         <Package>man-db</Package>
@@ -863,6 +871,7 @@
         <Package>pisilinux-gtk</Package>
         <Package>pisilinux-python</Package>
         <Package>pisilinux-theme-maia</Package>
+        <Package>pisilinux-welcome</Package>
         <Package>pixman</Package>
         <Package>plasma-desktop</Package>
         <Package>plasma-framework</Package>
@@ -895,6 +904,7 @@
         <Package>portaudio</Package>
         <Package>postgresql-lib</Package>
         <Package>powerdevil</Package>
+        <Package>powertop</Package>
         <Package>ppp</Package>
         <Package>print-manager</Package>
         <Package>prison</Package>
@@ -971,8 +981,6 @@
         <Package>sbc</Package>
         <Package>schroedinger</Package>
         <Package>scim-libs</Package>
-        <Package>lxdm</Package>
-        <Package>iso-codes</Package>
         <Package>sed</Package>
         <Package>service-manager</Package>
         <Package>sg3_utils</Package>
@@ -1107,12 +1115,10 @@
         <Package>xvba-video</Package>
         <Package>xvid</Package>
         <Package>xz</Package>
+        <Package>zemberek-office</Package>
         <Package>zip</Package>
         <Package>zlib</Package>
         <Package>zvbi</Package>
-        <Package>zemberek-office</Package>
-        <Package>kde-servicemenu-rootactions</Package>
-        <Package>kdeconnect</Package>
     </PackageSelection>
     <RootImagePackages>
         <SelectedComponent>desktop.kde.framework</SelectedComponent>
@@ -1121,13 +1127,11 @@
         <SelectedComponent>hardware.firmware</SelectedComponent>
         <SelectedComponent>system.base</SelectedComponent>
         <SelectedComponent>x11.server</SelectedComponent>
-        <SelectedPackage>kdeconnect</SelectedPackage>
         <SelectedPackage>Calamares</SelectedPackage>
+        <SelectedPackage>acpi</SelectedPackage>
         <SelectedPackage>alsa-tools</SelectedPackage>
         <SelectedPackage>alsa-utils</SelectedPackage>
         <SelectedPackage>ark</SelectedPackage>
-	<SelectedPackage>acpi</SelectedPackage>
-	<SelectedPackage>powertop</SelectedPackage>
         <SelectedPackage>bash-completion</SelectedPackage>
         <SelectedPackage>bashdb</SelectedPackage>
         <SelectedPackage>boost</SelectedPackage>
@@ -1139,6 +1143,7 @@
         <SelectedPackage>desktop-file-utils</SelectedPackage>
         <SelectedPackage>dolphin</SelectedPackage>
         <SelectedPackage>droid-fonts</SelectedPackage>
+        <SelectedPackage>efitools</SelectedPackage>
         <SelectedPackage>firefox</SelectedPackage>
         <SelectedPackage>firefox-lang-ca</SelectedPackage>
         <SelectedPackage>firefox-lang-da</SelectedPackage>
@@ -1216,8 +1221,11 @@
         <SelectedPackage>gwenview</SelectedPackage>
         <SelectedPackage>history-manager</SelectedPackage>
         <SelectedPackage>icon-theme-adwaita</SelectedPackage>
+        <SelectedPackage>iso-codes</SelectedPackage>
         <SelectedPackage>kaptan</SelectedPackage>
         <SelectedPackage>kate</SelectedPackage>
+        <SelectedPackage>kde-servicemenu-rootactions</SelectedPackage>
+        <SelectedPackage>kdeconnect</SelectedPackage>
         <SelectedPackage>kernel</SelectedPackage>
         <SelectedPackage>kio-extras</SelectedPackage>
         <SelectedPackage>konsole</SelectedPackage>
@@ -1251,6 +1259,7 @@
         <SelectedPackage>libreoffice-writer</SelectedPackage>
         <SelectedPackage>libva-intel-driver</SelectedPackage>
         <SelectedPackage>logrotate</SelectedPackage>
+        <SelectedPackage>lxdm</SelectedPackage>
         <SelectedPackage>memtest86</SelectedPackage>
         <SelectedPackage>mkinitcpio</SelectedPackage>
         <SelectedPackage>module-bbswitch</SelectedPackage>
@@ -1266,14 +1275,14 @@
         <SelectedPackage>pisilinux-gtk</SelectedPackage>
         <SelectedPackage>pisilinux-theme-maia</SelectedPackage>
         <SelectedPackage>pisilinux-theme-maia</SelectedPackage>
+        <SelectedPackage>pisilinux-welcome</SelectedPackage>
         <SelectedPackage>plymouth</SelectedPackage>
         <SelectedPackage>poppler-glib</SelectedPackage>
+        <SelectedPackage>powertop</SelectedPackage>
         <SelectedPackage>print-manager</SelectedPackage>
         <SelectedPackage>pulseaudio</SelectedPackage>
         <SelectedPackage>qbittorrent</SelectedPackage>
         <SelectedPackage>qt5-phonon-backend-gstreamer</SelectedPackage>
-        <SelectedPackage>lxdm</SelectedPackage>
-        <SelectedPackage>iso-codes</SelectedPackage>
         <SelectedPackage>service-manager</SelectedPackage>
         <SelectedPackage>smpeg</SelectedPackage>
         <SelectedPackage>smplayer</SelectedPackage>
@@ -1336,10 +1345,7 @@
         <SelectedPackage>xorg-video-voodoo</SelectedPackage>
         <SelectedPackage>xterm</SelectedPackage>
         <SelectedPackage>xvba-video</SelectedPackage>
-        <SelectedPackage>efitools</SelectedPackage>
-        <SelectedPackage>pisilinux-welcome</SelectedPackage>
-         <SelectedPackage>zemberek-office</SelectedPackage>
-        <SelectedPackage>kde-servicemenu-rootactions</SelectedPackage>
+        <SelectedPackage>zemberek-office</SelectedPackage>
         <Package>Calamares</Package>
         <Package>ConsoleKit</Package>
         <Package>DirectFB</Package>
@@ -1349,6 +1355,7 @@
         <Package>aalib</Package>
         <Package>accountsservice</Package>
         <Package>acl</Package>
+        <Package>acpi</Package>
         <Package>alsa-firmware</Package>
         <Package>alsa-lib</Package>
         <Package>alsa-tools</Package>
@@ -1439,6 +1446,7 @@
         <Package>e2fsprogs</Package>
         <Package>ebook-tools</Package>
         <Package>efibootmgr</Package>
+        <Package>efitools</Package>
         <Package>efivar</Package>
         <Package>elfutils</Package>
         <Package>enca</Package>
@@ -1588,6 +1596,7 @@
         <Package>iniparser</Package>
         <Package>iproute2</Package>
         <Package>iptables</Package>
+        <Package>iso-codes</Package>
         <Package>jack-audio-connection-kit</Package>
         <Package>jasper</Package>
         <Package>jbigkit</Package>
@@ -1613,7 +1622,9 @@
         <Package>kdbusaddons</Package>
         <Package>kde-cli-tools</Package>
         <Package>kde-gtk-config</Package>
+        <Package>kde-servicemenu-rootactions</Package>
         <Package>kdeclarative</Package>
+        <Package>kdeconnect</Package>
         <Package>kdecorations</Package>
         <Package>kded</Package>
         <Package>kdegraphics-mobipocket</Package>
@@ -1901,6 +1912,7 @@
         <Package>lsb-release</Package>
         <Package>lua</Package>
         <Package>lvm2</Package>
+        <Package>lxdm</Package>
         <Package>lzo</Package>
         <Package>mailcap</Package>
         <Package>man-db</Package>
@@ -1977,6 +1989,7 @@
         <Package>pisilinux-gtk</Package>
         <Package>pisilinux-python</Package>
         <Package>pisilinux-theme-maia</Package>
+        <Package>pisilinux-welcome</Package>
         <Package>pixman</Package>
         <Package>plasma-desktop</Package>
         <Package>plasma-framework</Package>
@@ -2009,6 +2022,7 @@
         <Package>portaudio</Package>
         <Package>postgresql-lib</Package>
         <Package>powerdevil</Package>
+        <Package>powertop</Package>
         <Package>ppp</Package>
         <Package>print-manager</Package>
         <Package>prison</Package>
@@ -2085,8 +2099,6 @@
         <Package>sbc</Package>
         <Package>schroedinger</Package>
         <Package>scim-libs</Package>
-        <Package>lxdm</Package>
-        <Package>iso-codes</Package>
         <Package>sed</Package>
         <Package>service-manager</Package>
         <Package>sg3_utils</Package>
@@ -2221,16 +2233,10 @@
         <Package>xvba-video</Package>
         <Package>xvid</Package>
         <Package>xz</Package>
+        <Package>zemberek-office</Package>
         <Package>zip</Package>
         <Package>zlib</Package>
         <Package>zvbi</Package>
-        <Package>efitools</Package>
-        <Package>pisilinux-welcome</Package>
-        <Package>zemberek-office</Package>
-        <Package>kde-servicemenu-rootactions</Package>
-        <Package>kdeconnect</Package>
-	<Package>acpi</Package>
-	<Package>powertop</Package>
     </RootImagePackages>
     <LanguageSelection default_language="tr_TR">
         <Language>tr_TR</Language>

@@ -602,32 +602,56 @@ def make_EFI(project):
     if not os.path.exists(efi_path):
         os.makedirs(efi_path) 
         os.makedirs(os.path.join(efi_path, "boot"))
+        os.makedirs(os.path.join(efi_path, "pisi"))
+
+    
+    loader_path = os.path.join(iso_dir, "loader")
+    
+    if not os.path.exists(loader_path):
+        os.makedirs(loader_path) 
+        os.makedirs(os.path.join(loader_path, "entries"))
 
     
     run("rm -rf %s/pisi.img" % work_dir)
 
+    run("cp -p %s/efi/loaders/loader.conf %s/." % (configdir, loader_path))
+    run("cp -p %s/efi/loaders/entries/* %s/entries/." % (configdir, loader_path))
+    
+  #  os.unlink(os.path.join(loader_path, "entries/pisi-efi-x86_64.conf"))
+    
+    run("cp -p %s/efi/preloader/boot/* %s/boot/." % (configdir, efi_path))
+     
+    run("cp -p %s/efi/preloader/* %s/." % (configdir, efi_path),ignore_error=True)
     
      
-    run("cp -rf %s/efi/preloader/* %s/boot/" % (configdir, efi_path))
-    run("cp -rf %s/autorun/* %s/." % (configdir, iso_dir))
+    #run("cp -rf %s/efi/preloader/* %s/boot/" % (configdir, efi_path))
+    #run("cp -rf %s/autorun/* %s/." % (configdir, iso_dir))
     
-    run("cp -rf %s/boot/kernel* %s/EFI/boot/kernel.efi" % (image_dir,iso_dir))  
-    run("cp -rf %s/initrdimage/boot/initramfs* %s/EFI/boot/initrd.img" % (work_dir,iso_dir))
-    run("cp -rf %s/initrdimage/boot/initramfs* %s/pisi/boot/x86_64/initrd.img" % (work_dir,iso_dir))
-    #run("cp -rf %s/initrdimage/boot/initramfs %s/desktopimage/boot/initramfs" % (work_dir,work_dir))
+    #run("cp -rf %s/boot/kernel* %s/EFI/boot/kernel.efi" % (image_dir,iso_dir))  
+    #run("cp -rf %s/initrdimage/boot/initramfs* %s/EFI/boot/initrd.img" % (work_dir,iso_dir))
+    #run("cp -rf %s/initrdimage/boot/initramfs* %s/pisi/boot/x86_64/initrd.img" % (work_dir,iso_dir))
+    ##run("cp -rf %s/initrdimage/boot/initramfs %s/desktopimage/boot/initramfs" % (work_dir,work_dir))
     
     run("dd if=/dev/zero bs=1M count=40 of=%s/pisi.img"% work_dir)
     run("mkfs.vfat -n PisiLinux %s/pisi.img"% work_dir)
     run("mount %s/pisi.img %s"% (work_dir,efi_tmp))
     
     
-    os.makedirs(os.path.join(efi_tmp, "EFI/boot"))
+    os.makedirs(os.path.join(efi_tmp, "loader"))
+    os.makedirs(os.path.join(efi_tmp, "EFI"))
 
-    run("cp -r %s/EFI/boot/* %s/EFI/boot/" % (iso_dir, efi_tmp),ignore_error=True)
+    run("cp -r %s/* %s/EFI/." % (efi_path, efi_tmp),ignore_error=True)
     
+    run("cp -r %s/* %s/loader/." % (loader_path, efi_tmp),ignore_error=True)
+    
+   # os.unlink(os.path.join(efi_tmp, "loader/entries/pisi-x86_64.conf"))
+    
+    run("cp -p %s/boot/kernel* %s/EFI/pisi/kernel.efi" % (image_dir,efi_tmp))  
+    run("cp -p %s/boot/initramfs* %s/EFI/pisi/initrd.img" % (image_dir,efi_tmp))  
+    run("cp -p %s/boot/kernel* %s/EFI/pisi/kernel.efi" % (image_dir,iso_dir))   
+    run("cp -p %s//pisi.img %s/EFI/pisi//pisi.img" % (work_dir,iso_dir))
     run("umount %s"% efi_tmp,ignore_error=True)
     run("umount -l %s"% efi_tmp,ignore_error=True)
-    
 
     
 
