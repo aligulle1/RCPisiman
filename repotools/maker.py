@@ -590,7 +590,6 @@ def generate_sort_list(iso_dir):
 def make_EFI(project):
     
     work_dir = os.path.join(project.work_dir)
-    img_dir = os.path.join(project.work_dir)
     configdir =os.path.join(project.config_files)
     iso_dir = project.iso_dir()
     efi_tmp = project.efi_tmp_path_dir(clean=True)
@@ -610,9 +609,11 @@ def make_EFI(project):
     if not os.path.exists(loader_path):
         os.makedirs(loader_path) 
         os.makedirs(os.path.join(loader_path, "entries"))
-
+    
+    
     
     run("rm -rf %s/pisi.img" % work_dir)
+    
 
     run("cp -p %s/efi/loaders/loader.conf %s/." % (configdir, loader_path))
     run("cp -p %s/efi/loaders/entries/* %s/entries/." % (configdir, loader_path))
@@ -623,19 +624,10 @@ def make_EFI(project):
      
     run("cp -p %s/efi/preloader/* %s/." % (configdir, efi_path),ignore_error=True)
     
-     
-    #run("cp -rf %s/efi/preloader/* %s/boot/" % (configdir, efi_path))
-    #run("cp -rf %s/autorun/* %s/." % (configdir, iso_dir))
-    
-    #run("cp -rf %s/boot/kernel* %s/EFI/boot/kernel.efi" % (image_dir,iso_dir))  
-    #run("cp -rf %s/initrdimage/boot/initramfs* %s/EFI/boot/initrd.img" % (work_dir,iso_dir))
-    #run("cp -rf %s/initrdimage/boot/initramfs* %s/pisi/boot/x86_64/initrd.img" % (work_dir,iso_dir))
-    ##run("cp -rf %s/initrdimage/boot/initramfs %s/desktopimage/boot/initramfs" % (work_dir,work_dir))
     
     run("dd if=/dev/zero bs=1M count=40 of=%s/pisi.img"% work_dir)
-    run("mkfs.vfat -n PisiLinux %s/pisi.img"% work_dir)
+    run("mkfs.vfat -n PISI_EFI %s/pisi.img"% work_dir)
     run("mount %s/pisi.img %s"% (work_dir,efi_tmp))
-    
     
     os.makedirs(os.path.join(efi_tmp, "loader"))
     os.makedirs(os.path.join(efi_tmp, "EFI"))
@@ -648,13 +640,11 @@ def make_EFI(project):
     
     run("cp -p %s/boot/kernel* %s/EFI/pisi/kernel.efi" % (image_dir,efi_tmp))  
     run("cp -p %s/boot/initramfs* %s/EFI/pisi/initrd.img" % (image_dir,efi_tmp))  
-    run("cp -p %s/boot/kernel* %s/EFI/pisi/kernel.efi" % (image_dir,iso_dir))   
-    run("cp -p %s//pisi.img %s/EFI/pisi//pisi.img" % (work_dir,iso_dir))
+    run("cp -p %s/boot/kernel* %s/EFI/pisi/kernel.efi" % (image_dir,iso_dir))  
+    run("cp -p %s/boot/initramfs* %s/EFI/pisi/initrd.img" % (image_dir,iso_dir)) 
+    
     run("umount %s"% efi_tmp,ignore_error=True)
     run("umount -l %s"% efi_tmp,ignore_error=True)
-
-    
-
     
         
         
@@ -684,8 +674,9 @@ def make_iso(project):
         make_EFI(project)
         run("cp -p %s/isomounts %s/." % (configdir, image_path))
         run("cp -p %s/*sqfs %s/x86_64/." % (work_dir, image_path))
-        run("cp -p %s/pisi.img %s/EFI/." % (work_dir, iso_dir))
-        
+        run("cp -p %s/pisi.img %s/EFI/pisi/." % (work_dir, iso_dir))
+
+   
         run("touch %s/.miso" % iso_dir)
 
         def copy(src, dest):
@@ -699,7 +690,7 @@ def make_iso(project):
         setup_isolinux(project)
 
 
-        publisher="Pisi  http://www.pisilinux.org"
+        publisher="Pisi GNU/Linux http://www.pisilinux.org"
         application="Pisi GNU/Linux Live Media"
         label="pisiLive"
 
@@ -709,8 +700,9 @@ def make_iso(project):
             -relaxed-filenames -allow-lowercase -volid "%s" -publisher "%s" -appid "%s" \
             -preparer "prepared by pisiman" -eltorito-boot isolinux/isolinux.bin \
             -eltorito-catalog isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table \
-            -isohybrid-mbr "%s/isolinux/isohdpfx.bin" -eltorito-alt-boot -e /EFI/pisi.img -isohybrid-gpt-basdat -no-emul-boot \
+            -isohybrid-mbr "%s/isolinux/isohdpfx.bin" -eltorito-alt-boot -e EFI/pisi/pisi.img -isohybrid-gpt-basdat -no-emul-boot \
             -output "%s" "%s/iso/"'% (label, publisher ,application, iso_dir, iso_file, work_dir)
+       
        
        
         run(cmd)
