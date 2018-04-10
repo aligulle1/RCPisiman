@@ -876,7 +876,6 @@
         <Package>plasma-desktop</Package>
         <Package>plasma-framework</Package>
         <Package>plasma-integration</Package>
-        <Package>plasma-mediacenter</Package>
         <Package>plasma-nm</Package>
         <Package>plasma-pa</Package>
         <Package>plasma-sdk</Package>
@@ -1994,7 +1993,6 @@
         <Package>plasma-desktop</Package>
         <Package>plasma-framework</Package>
         <Package>plasma-integration</Package>
-        <Package>plasma-mediacenter</Package>
         <Package>plasma-nm</Package>
         <Package>plasma-pa</Package>
         <Package>plasma-sdk</Package>
