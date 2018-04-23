@@ -651,7 +651,7 @@ def make_EFI(project):
 def make_iso(project):
     print "Preparing ISO..."
     xterm_title("Preparing ISO")
-
+    make_image(project)
 
     try:
         iso_dir = project.iso_dir(clean=True)
