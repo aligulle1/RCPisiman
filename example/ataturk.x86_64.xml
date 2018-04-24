@@ -103,7 +103,7 @@
         <SelectedPackage>gwenview</SelectedPackage>
         <SelectedPackage>history-manager</SelectedPackage>
         <SelectedPackage>icon-theme-adwaita</SelectedPackage>
-        <SelectedPackage>iso-codes</SelectedPackage>
+        <SelectedPackage>sddm-kcm</SelectedPackage>
         <SelectedPackage>kaptan</SelectedPackage>
         <SelectedPackage>kate</SelectedPackage>
         <SelectedPackage>kde-servicemenu-rootactions</SelectedPackage>
@@ -141,7 +141,7 @@
         <SelectedPackage>libreoffice-writer</SelectedPackage>
         <SelectedPackage>libva-intel-driver</SelectedPackage>
         <SelectedPackage>logrotate</SelectedPackage>
-        <SelectedPackage>lxdm</SelectedPackage>
+        <SelectedPackage>sddm</SelectedPackage>
         <SelectedPackage>memtest86</SelectedPackage>
         <SelectedPackage>mkinitcpio</SelectedPackage>
         <SelectedPackage>module-bbswitch</SelectedPackage>
@@ -478,7 +478,7 @@
         <Package>iniparser</Package>
         <Package>iproute2</Package>
         <Package>iptables</Package>
-        <Package>iso-codes</Package>
+        <Package>sddm-kcm</Package>
         <Package>jack-audio-connection-kit</Package>
         <Package>jasper</Package>
         <Package>jbigkit</Package>
@@ -794,7 +794,7 @@
         <Package>lsb-release</Package>
         <Package>lua</Package>
         <Package>lvm2</Package>
-        <Package>lxdm</Package>
+        <Package>sddm</Package>
         <Package>lzo</Package>
         <Package>mailcap</Package>
         <Package>man-db</Package>
@@ -1220,7 +1220,7 @@
         <SelectedPackage>gwenview</SelectedPackage>
         <SelectedPackage>history-manager</SelectedPackage>
         <SelectedPackage>icon-theme-adwaita</SelectedPackage>
-        <SelectedPackage>iso-codes</SelectedPackage>
+        <SelectedPackage>sddm-kcm</SelectedPackage>
         <SelectedPackage>kaptan</SelectedPackage>
         <SelectedPackage>kate</SelectedPackage>
         <SelectedPackage>kde-servicemenu-rootactions</SelectedPackage>
@@ -1258,7 +1258,7 @@
         <SelectedPackage>libreoffice-writer</SelectedPackage>
         <SelectedPackage>libva-intel-driver</SelectedPackage>
         <SelectedPackage>logrotate</SelectedPackage>
-        <SelectedPackage>lxdm</SelectedPackage>
+        <SelectedPackage>sddm</SelectedPackage>
         <SelectedPackage>memtest86</SelectedPackage>
         <SelectedPackage>mkinitcpio</SelectedPackage>
         <SelectedPackage>module-bbswitch</SelectedPackage>
@@ -1595,7 +1595,7 @@
         <Package>iniparser</Package>
         <Package>iproute2</Package>
         <Package>iptables</Package>
-        <Package>iso-codes</Package>
+        <Package>sddm-kcm</Package>
         <Package>jack-audio-connection-kit</Package>
         <Package>jasper</Package>
         <Package>jbigkit</Package>
@@ -1911,7 +1911,7 @@
         <Package>lsb-release</Package>
         <Package>lua</Package>
         <Package>lvm2</Package>
-        <Package>lxdm</Package>
+        <Package>sddm</Package>
         <Package>lzo</Package>
         <Package>mailcap</Package>
         <Package>man-db</Package>

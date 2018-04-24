@@ -513,7 +513,7 @@ def make_image(project):
         
         make_initrd(project)
         add_repo(project)
-        setup_live_lxdm(project)
+        setup_live_sddm(project)
     except KeyboardInterrupt:
         print "Keyboard Interrupt: make_image() cancelled."
         sys.exit(1)        
@@ -651,7 +651,6 @@ def make_EFI(project):
 def make_iso(project):
     print "Preparing ISO..."
     xterm_title("Preparing ISO")
-    make_image(project)
 
     try:
         iso_dir = project.iso_dir(clean=True)
